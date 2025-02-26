@@ -53,6 +53,10 @@ To better understand the differences between Ridge and Lasso Regression, here's 
 
 ![Ridge and Lasso Illustration](ridge_lasso.png)
 
+![Ridge Illustration](ridge.png)
+
+![Lasso Illustration](lasso.png)
+
 This image highlights how Ridge Regression smooths coefficient values, while Lasso Regression can set some coefficients 
 to zero, aiding in feature selection.
 
