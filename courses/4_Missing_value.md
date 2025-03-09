@@ -33,7 +33,7 @@ There is no one-size-fits-all solution for handling missing values, as different
 ### 1. **Deleting the Column with Missing Data**  
 Remove columns with a high percentage of missing values.  
 ```python
-df = df.drop(['deck'], axis=1)
+df = df.drop(['age'], axis=1)
 ```
 ### 2. **Deleting the Row with Missing Data**  
 Remove rows containing at least one null value.  
@@ -55,7 +55,7 @@ df['age'] = df['age'].fillna(df.groupby('class')['age'].transform('mean'))
 Replace missing values with the most frequent category or create a new category.
 
 ```python
-df['deck'] = df['deck'].fillna('H')
+df['age'] = df['age'].fillna('H')
 ```
 ### 5. **Forward Fill and Backward Fill**
 Fill missing values with the last (ffill) or next (bfill) non-missing value.
