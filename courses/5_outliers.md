@@ -52,49 +52,51 @@ Statistical test for detecting outliers in univariate datasets.
 6. **Tukey’s Fences:**
 Similar to IQR but with different multipliers for skewed distributions.
 ## Multivariate  Outliers 
-Density-Based Methods (DBSCAN):
-
+1. **Density-Based Methods (DBSCAN):** 
+```python
 from sklearn.cluster import DBSCAN
 dbscan = DBSCAN(eps=0.5, min_samples=5)
 dbscan.fit(data)
 outliers = data[dbscan.labels_ == -1]
-
-Local Outlier Factor (LOF):
-
+```
+2. **Local Outlier Factor (LOF):**
+```python
 from sklearn.neighbors import LocalOutlierFactor
 clf = LocalOutlierFactor(n_neighbors=20)
 df['scores'] = clf.negative_outlier_factor_
-
-Isolation Forest:
-
+```
+3. **Isolation Forest:**
+```python
 from sklearn.ensemble import IsolationForest
 def random_cut_forest(data, n_estimators=100, contamination=0.1):
     model = IsolationForest(n_estimators=n_estimators, contamination=contamination)
     model.fit(data)
     return model.decision_function(data)
+```
 
-Mahalanobis Distance: Measures the distance of each point from the centroid in multivariate space.
+4. **IMahalanobis Distance:** Measures the distance of each point from the centroid in multivariate space.
 
-Robust Random Cut Forest: Effective for high-dimensional datasets.
+5. **Robust Random Cut Forest:** Effective for high-dimensional datasets.
 
-Cluster-Based Methods: Identify outliers as points that do not belong to any cluster.
+6. **Cluster-Based Methods:** Identify outliers as points that do not belong to any cluster.
 
-Techniques to Handle Outliers
+## Techniques to Handle Outliers
 
-Removing Outliers: Deleting outliers can lead to data loss and should be used cautiously.
+1. **Removing Outliers:** Deleting outliers can lead to data loss and should be used cautiously.
 
-Winsorization: Replaces extreme values with the nearest non-outliers.
-
+2. **Winsorization:** Replaces extreme values with the nearest non-outliers.
+```python
 from scipy.stats.mstats import winsorize
 import numpy as np
 data = np.array([10, 20, 30, 40, 500])
 winsorized_data = winsorize(data, limits=[0.05, 0.05])
+```
 
-Data Transformation: Logarithmic or square root transformations can reduce the impact of outliers.
+4. **Data Transformation:** Logarithmic or square root transformations can reduce the impact of outliers.
 
-Robust Statistical Methods: Useful for handling heavy-tailed distributions and datasets with outliers.
+5. **Robust Statistical Methods:** Useful for handling heavy-tailed distributions and datasets with outliers.
 
-Conclusion
+# Conclusion
 
 Outliers should be carefully evaluated before removal or transformation to maintain data integrity and avoid bias. Proper handling of outliers ensures better model performance and accurate statistical inferences.
 
