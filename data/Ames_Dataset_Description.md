@@ -5,10 +5,10 @@
 This project involves analyzing and building machine learning models using the Ames Housing Data Set. The primary objective is to explore the dataset, uncover valuable insights, and build predictive models to estimate house sale prices based on various features such as property size, location, condition, and amenities.  
 
 ## Project Objectives  
--Perform exploratory data analysis (EDA) to understand the dataset's features and distributions.
--Build predictive models to estimate house sale prices using machine learning algorithms.
--Evaluate and compare model performance using metrics such as Mean Absolute Error (MAE) and R-squared (R²).
--Derive actionable insights to help real estate professionals make data-driven decisions. 
+- Perform exploratory data analysis (EDA) to understand the dataset's features and distributions.
+- Build predictive models to estimate house sale prices using machine learning algorithms.
+- Evaluate and compare model performance using metrics such as Mean Absolute Error (MAE) and R-squared (R²).
+- Derive actionable insights to help real estate professionals make data-driven decisions. 
 
 ## Dataset Description  
 The dataset used in this project contains detailed information about residential properties in Ames, Iowa, including:
