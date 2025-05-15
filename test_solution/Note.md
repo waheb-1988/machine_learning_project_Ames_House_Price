@@ -7,10 +7,10 @@ or convert it into a binary classification target:
 
 
 ## Steps : 
-1. EDA..........................> 4 Pts
-2. Code structure..........................> 2 Pts
+1. EDA..........................> 2 Pts
+2. Code structure..........................> 3 Pts
 3. regression logic..........................> 2 Pts
-4. Classifciation logic..........................> 2 Pts
+4. Classifciation logic..........................> 3 Pts
 5. Interpretation..........................> 2 Pts
 
 
