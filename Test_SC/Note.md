@@ -8,9 +8,9 @@ or convert it into a binary/Multy classification target:
 
 ## Steps : 
 1. EDA..........................> 2 Pts
-2. Code structure..........................> 3 Pts
-3. regression logic..........................> 2 Pts
+2. Code structure..........................> 2 Pts
+3. regression logic..........................> 1 Pts
 4. Classifciation logic..........................> 3 Pts
-5. Interpretation..........................> 2 Pts
+
 
 
