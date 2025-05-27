@@ -6,7 +6,7 @@ results. You need treat the mental_health_score either as a continuous variable 
 or convert it into a binary/Multy classification target:
 
 
-## Steps : 
+## Marks : 
 1. EDA..........................> 2 Pts
 2. Code structure..........................> 2 Pts
 3. regression logic..........................> 1 Pts
